@@ -1,7 +1,7 @@
 // Function to fetch the menu
 async function getMenu() {
     try {
-        const response = await fetch('menu.json'); // Replace with your JSON data source
+        const response = await fetch('https://raw.githubusercontent.com/saksham-accio/f2_contest_3/main/food.json'); // Replace with your JSON data source
         const menuData = await response.json();
         const menuSection = document.getElementById('menu');
         
